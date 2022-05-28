@@ -3,7 +3,7 @@
 
 ## Descarga
     Desde una consola o el bash de git usar el siguiente comando
-        git clone https://github.com/tecasires/django_base.git
+        git clone https://github.com/tecasires/mvt_gonzalo.git
 
 
 ## Instalacion:
