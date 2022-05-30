@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django_base.views import mi_vista, mi_template, mi_inicio
+from django_base.views import my_view, my_template, my_home
+from familiares.views import crear_familiar
 
 
 urlpatterns = [
+    path('', my_home),
     path('admin/', admin.site.urls),
-    path('vista/', mi_vista),
-    path('template/', mi_template),
-    path('', mi_inicio)
+    path('view/', my_view),
+    path('template/', my_template),
+    path('crear_familiar/', crear_familiar)
 ]

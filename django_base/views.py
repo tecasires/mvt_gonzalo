@@ -2,15 +2,15 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 
-def mi_vista(request):
-    return HttpResponse("Vista")
+def my_home(request):
+    my_context = {}
+    return render(request, "home.html", context = my_context)
 
 
-def mi_template(request):
-    mi_contexto = {}
-    return render(request, "template_01.html", context = mi_contexto)
+def my_view(request):
+    return HttpResponse("View")
 
 
-def mi_inicio(request):
-    mi_contexto = {}
-    return render(request, "inicio.html", context = mi_contexto)
+def my_template(request):
+    my_context = {}
+    return render(request, "template.html", context = my_context)
