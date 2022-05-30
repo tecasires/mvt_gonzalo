@@ -9,7 +9,7 @@ def crear_familiar(request):
     familiar_nuevo_04 = Familiares.objects.create(nombre = "Aitor", apellido_01 = "De Amunátegui", apellido_02 = "Florido", dni = 42894977, fecha_nacimiento = "2018-09-10", parentesco = "Hijo", ahorros = 25, active = True)
     familiar_nuevo_05 = Familiares.objects.create(nombre = "Dori", apellido_01 = "De Amunátegui", apellido_02 = "Florido", dni = 0, fecha_nacimiento = "2020-07-05", parentesco = "Mascota", ahorros = 0, active = True)
 
-    my_context = {"familiar_nuevo" : familiar_nuevo_01, "familiar_nuevo" : familiar_nuevo_02, "familiar_nuevo": familiar_nuevo_03, "familiar_nuevo" : familiar_nuevo_04, "familiar_nuevo" : familiar_nuevo_05}
+    my_context = {"familiar_nuevo_01" : familiar_nuevo_01, "familiar_nuevo_02" : familiar_nuevo_02, "familiar_nuevo_03": familiar_nuevo_03, "familiar_nuevo_04" : familiar_nuevo_04, "familiar_nuevo_05" : familiar_nuevo_05}
     return render(request, "home.html", context=my_context)
 
 
