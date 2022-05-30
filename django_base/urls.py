@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django_base.views import my_view, my_template, my_home
-from familiares.views import crear_familiar
+from familiares.views import crear_familiar, ver_familiares
 
 
 urlpatterns = [
@@ -24,5 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('view/', my_view),
     path('template/', my_template),
-    path('crear_familiares/', crear_familiar)
+    path('crear_familiares/', crear_familiar),
+    path('ver_familiares/', ver_familiares)
 ]

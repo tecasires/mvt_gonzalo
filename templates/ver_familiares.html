@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familiares</title>
+</head>
+<body>
+    <table>
+        <th>Nombre:</th><th>Primer Apellido:</th><th>Segundo Apellido:</th><th>D.N.I:</th>
+        <th>Fecha de nacimiento:</th><th>Parentesco:</th><th>Ahorros:</th>
+        <th>Activo:</th>
+        {% for familiar in familiar_mostrado %}
+        
+                <tr>
+                    <td>{{familiar.nombre}}</td><td>{{familiar.apellido_01}}</td><td>{{familiar.apellido_02}}</td>
+                    <td>{{familiar.dni}}</td><td>{{familiar.fecha_nacimiento}}</td><td>{{familiar.parentesco}}</td>
+                    <td> {{familiar.ahorros}}</td><td> {{familiar.active}}</td>
+                </tr>
+         
+        {% endfor %}
+</body>
+</html>

@@ -19,3 +19,9 @@ def crear_familiar(request):
     my_context = {"familiar_nuevo" : familiar_nuevo}
     return render(request, "home.html", context = my_context)
 """
+
+
+def ver_familiares(request):
+    familiar_mostrado = Familiares.objects.all()
+    my_context = {"familiar_mostrado" : familiar_mostrado}
+    return render(request, "ver_familiares.html", context = my_context)
