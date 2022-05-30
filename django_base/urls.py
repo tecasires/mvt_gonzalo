@@ -24,5 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('view/', my_view),
     path('template/', my_template),
-    path('crear_familiar/', crear_familiar)
+    path('crear_familiares/', crear_familiar)
 ]
