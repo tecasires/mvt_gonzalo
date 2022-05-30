@@ -14,3 +14,5 @@
     Para cargar el contenido de la base de datos:
     * http://127.0.0.1:8000/crear_familiares/
     
+    Para visualizar el contenido de la base de datos:
+    * http://127.0.0.1:8000/ver_familiares

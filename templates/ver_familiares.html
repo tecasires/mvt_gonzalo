@@ -12,13 +12,13 @@
         <th>Fecha de nacimiento:</th><th>Parentesco:</th><th>Ahorros:</th>
         <th>Activo:</th>
         {% for familiar in familiar_mostrado %}
-        
+            {% if familiar.active == True %}
                 <tr>
                     <td>{{familiar.nombre}}</td><td>{{familiar.apellido_01}}</td><td>{{familiar.apellido_02}}</td>
                     <td>{{familiar.dni}}</td><td>{{familiar.fecha_nacimiento}}</td><td>{{familiar.parentesco}}</td>
                     <td> {{familiar.ahorros}}</td><td> {{familiar.active}}</td>
                 </tr>
-         
+            {% endif %}
         {% endfor %}
 </body>
 </html>
