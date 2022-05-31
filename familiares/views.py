@@ -22,6 +22,9 @@ def crear_familiar(request):
 
 
 def ver_familiares(request):
-    familiar_mostrado = Familiares.objects.all()
+    familiar_mostrado = Familiares.objects.filter(active = True)
+    # familiar_mostrado = Familiares.objects.all()
+    # filter  = all + filter
+    # exclude
     my_context = {"familiar_mostrado" : familiar_mostrado}
     return render(request, "ver_familiares.html", context = my_context)
